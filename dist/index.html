@@ -15,8 +15,13 @@
     <main class="main">
       <div class="main__container" v-for="n of 8" :key="n">
           <h2 class="head">第{{ n }}回講義</h2>
-          <p class="link" v-if="n == movie.class" v-for="movie in movies"><a target="_blank" :href="url + movie.id">動画{{ movie.num }}</a></p>
-          <p class="link pdf" v-if="n == pdf.class" v-for="pdf in pdfs"><a target="_blank" :href="'pdf/' + pdf.num + '.pdf'">演習PDF{{ pdf.num }}</a></p>
+          <p class="link mov" v-if="n == movie.class" v-for="movie in movies"><a target="_blank" :href="url + movie.id">動画{{ movie.num }}</a></p>
+          <p class="link pdf" v-if="n == pdf.class" v-for="pdf in pdfs"><a target="_blank" :href="'pdf/ex' + pdf.num + '.pdf'">演習PDF{{ pdf.num }}</a></p>
+      </div>
+      <div class="main__container">
+          <h2 class="head">レポート</h2>
+          <p class="link rep"><a target="_blank" href="pdf/rep1.pdf">第1回レポート</a></p>
+          <p class="link rep"><a target="_blank" href="pdf/rep2.pdf">第1回レポート</a></p>
       </div>
     </main>
   </div>

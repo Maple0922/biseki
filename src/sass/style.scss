@@ -15,10 +15,17 @@
   padding: 4px 10px;
   margin: 4px;
   font-size: 16px;
-  background: #c1b2d7;
   border-radius: 4px;
+
+  &.mov {
+    background: #c1b2d7;
+  }
 
   &.pdf {
     background: #94b7e0;
+  }
+
+  &.rep {
+    background: #db9fad;
   }
 }
