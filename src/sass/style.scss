@@ -12,20 +12,28 @@
 
 .link {
   display: inline-block;
-  padding: 4px 10px;
+  padding: 2px 8px;
   margin: 4px;
   font-size: 16px;
   border-radius: 4px;
+  transition: 0.1s;
 
   &.mov {
     background: #c1b2d7;
+    border: 2px solid #c1b2d7;
   }
 
   &.pdf {
     background: #94b7e0;
+    border: 2px solid #94b7e0;
   }
 
   &.rep {
     background: #db9fad;
+    border: 2px solid #db9fad;
+  }
+
+  &:hover {
+    border: 2px solid #0007;
   }
 }
