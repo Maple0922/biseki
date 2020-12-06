@@ -1,3 +1,24 @@
 @import "import";
 
 // addiction styles
+
+.head {
+  padding-bottom: 4px;
+  padding-left: 4px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-bottom: 2px solid gray;
+}
+
+.link {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 4px;
+  font-size: 16px;
+  background: #c1b2d7;
+  border-radius: 4px;
+
+  &.pdf {
+    background: #94b7e0;
+  }
+}
